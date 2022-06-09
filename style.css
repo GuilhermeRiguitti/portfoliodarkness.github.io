@@ -1,0 +1,678 @@
+@keyframes animProjetos {
+    from {
+        
+        width: 600px;
+        height: 300px;
+    }
+    to {
+        
+        width: 700px;
+        height: 580px;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: 100%;   
+}
+
+
+
+@media screen and (min-width: 320px){
+    .navBar {
+        width: 100%;
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: transparent;
+        height: 80px;
+        position: fixed;
+        z-index: +1;
+        
+    }
+    
+    .logo {
+        width: 74px;
+        height: 80px;
+        float: left;
+        background-color: #54847892;
+        border-radius: 0px 0px 37px 0px;
+        text-align: center;
+    }
+    
+    .imgLogo{
+        width: 46px;
+        height: 31px;
+        display: block;
+        margin: 37px auto 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .divHome{
+        background-image: url("imagens/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 1fr 1fr 0.2fr 0.1fr 1.5fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        width: 100%;
+        height: max-content;
+        align-items: center;
+        justify-items: center;
+        text-align: left;
+        color: #ffffffe1;  
+    }
+    
+    .item1{
+        width: 45%;;
+        grid-row: 2;
+        grid-column: 2;   
+    }
+    
+    .item2{
+        grid-row: 3;
+        grid-column: 2; 
+        text-shadow: 0.15em 0.15em 0.25em rgb(29, 29, 29);
+        font-family: 'Open Sans';
+        font-weight: 550;
+    }
+    
+    .item3{
+        grid-row: 4;
+        grid-column: 2; 
+        text-shadow: 0.1em 0.1em 0.2em rgb(41, 41, 41) ;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 19px;
+        width: 100%;
+        justify-content: left;
+        
+       
+    }
+
+    .perfilProssional{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        background-color:black;
+        padding: 100px 10px 100px 10px;  
+    }
+    
+    .itemImg1Perfil {
+        width: 70%;
+        margin: 10px ;
+    }
+    
+    .divEducacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        border-right: 1px solid black;
+        align-items: initial;
+    }
+    
+    .itemTituloPerfil {  
+        text-align: right;
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffffe1;
+    }
+    
+    .itemTexto1Perfil {
+        width: 90%;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: justify;  
+        color: rgb(178, 185, 178);   
+    }
+    
+    .divQualificacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;   
+    }
+    
+    .itemTitulo2Perfil {  
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffffe1;
+    }
+    
+    .itemTexto2Perfil {  
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(178, 185, 178)
+    }
+    
+    .itemImg2Perfil {
+        width: 77%;
+        margin: 10px ;
+    }
+
+    .divPortifolioTitulo{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        padding: 50px 10px 20px 10px;
+    }
+    
+    .portifolioTitulo{
+        color: rgb(178, 185, 178);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .portifolioSubTitulo{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffffe1;
+    }
+    
+    .portifolioDesc{
+        color: rgb(178, 185, 178);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .clicandoAqui{
+        color: rgb(178, 185, 178)
+        
+    }
+    
+    .fotoProjetos {
+        width: 600px;
+        height: 300px;
+    }
+    
+    .divProjetos{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        height: max-content;
+        background-color: black;
+        padding: 0px 10px 100px 10px;
+    
+    }
+    
+    
+    .divPokedex1 {
+        background-image: url();
+        background-color: #548478f5;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 37px 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    .divPokedex2 {
+        background-image: url();
+        background-color: #548478f5;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    .divPokedex3 {
+        background-image: url();
+        background-color: #548478f5;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 37px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    
+    
+    
+    /*footer*/
+    .divFooter {
+        display: grid;
+        grid-template-rows: 2fr;
+        width: contain;
+        height: max-content;
+        background-color: #548478f5;
+        color: #ffffffe1;
+        border-radius: 37px 0px 37px 0px;
+        padding: 30px 40px 70px 40px;
+    }
+    
+    .divLinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .tituloContatos{
+        display: grid;
+        
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+    .imgFooter{
+        width: 63%;  
+    }
+    
+    .linkFooter{
+        display: grid;
+    
+        justify-items: center;
+        width: 40%;
+    }
+    
+    .lineFooter{
+        height: 17vh;
+     
+    }
+    
+    
+    
+    
+    
+}
+
+    
+
+@media screen and (min-width: 768px){
+    .navBar {
+        width: 100%;
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: transparent;
+        height: 80px;
+        position: fixed;
+        z-index: +1;
+    }
+    
+    .logo {
+        width: 74px;
+        height: 80px;
+        float: left;
+        background-color: #54847892;
+        border-radius: 0px 0px 37px 0px;
+        text-align: center;
+    }
+    
+    .imgLogo{
+        width: 46px;
+        height: 31px;
+        display: block;
+        margin: 37px auto 0;
+    }
+    .menu {
+
+        display: table;
+        float: left;
+        height: 80px;
+        margin-left: 20px;
+        
+    }
+
+    .link {
+        margin: 50px ;
+        font-size: small;
+        color: #ffffff;
+        font-family: 'Open Sans';
+        text-decoration: none;
+        text-shadow: 0.15em 0.15em 0.25em rgb(51, 51, 51);
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 40px 20px 0 20px;
+        font-weight: 400;
+    
+    }
+    
+    .menu a:first-child{
+        padding-left: 0;     
+    }
+    
+    .menu a:hover{
+        color: #54847892;
+    }
+    
+    .menu a:before{
+        content: '';
+        width: 100%;
+        height: 4px;
+        color: #19ac8792;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.2s ease-out;
+    }
+    
+    .divHome{
+        background-image: url("imagens/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 3.2fr 2fr 0.5fr 0.3fr 2.5fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        width: 100%;
+        height: max-content;
+        align-items: center;
+        justify-items: center;
+        color: #ffffffe1;  
+    }
+    
+    .item1{
+        width: 18%;;
+        grid-row: 2;
+        grid-column: 2;   
+    }
+    
+    .item2{
+        grid-row: 3;
+        grid-column: 2; 
+        text-shadow: 0.15em 0.15em 0.25em rgb(29, 29, 29);
+        font-family: 'Open Sans';
+        font-weight: 550;
+        margin: 10px;
+    }
+    
+    .item3{
+        grid-row: 4;
+        grid-column: 2; 
+        text-shadow: 0.1em 0.1em 0.2em rgb(41, 41, 41) ;
+        font-family: 'Open Sans';
+        font-weight: 500;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        
+    }
+
+    .perfilProssional{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        background-color:black;
+        padding: 100px 10px 100px 10px;
+        
+    }
+    
+    .itemImg1Perfil {
+        width: 70%;
+        margin: 10px ;
+    }
+    
+    .divEducacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        border-right: 1px solid black;
+        align-items: initial;
+    }
+    
+    .itemTituloPerfil {  
+        text-align: right;
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffffe1;
+    }
+    
+    .itemTexto1Perfil {
+        width: 90%;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: right;  
+        color: rgb(178, 185, 178);   
+    }
+    
+    .divQualificacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;   
+    }
+    
+    .itemTitulo2Perfil {  
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffffe1;
+    }
+    
+    .itemTexto2Perfil {  
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(178, 185, 178)
+    }
+    
+    .itemImg2Perfil {
+        width: 77%;
+        margin: 10px ;
+    }
+
+    .divPortifolioTitulo{
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+        padding: 50px 10px 20px 10px;
+    }
+    
+    .portifolioTitulo{
+        color: rgb(178, 185, 178);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .portifolioSubTitulo{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffffe1;
+    }
+    
+    .portifolioDesc{
+        color: rgb(178, 185, 178);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .clicandoAqui{
+        color: rgb(178, 185, 178)
+        
+    }
+    
+    .fotoProjetos {
+        width: 600px;
+        height: 300px;
+    }
+    
+    .divProjetos{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        justify-content: space-around;
+        justify-items: center;
+        align-items: center;
+        height: max-content;
+        background-color: black;
+        padding: 0px 10px 100px 10px;
+        border-radius: 0px 0px 37px 0px;
+    
+    }
+    
+    
+    .divPokedex1 {
+        background-image: url();
+        background-color: #548478f8;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 37px 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    .divPokedex2 {
+        background-image: url();
+        background-color: #548478f8;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 0px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    .divPokedex3 {
+        background-image: url();
+        background-color: #548478f8;
+        width: 90%;
+        height: 150px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px 0px 37px 0px;
+        box-shadow: 0px 0px 0px;
+        background-size: 100%;
+        color: white;
+        padding: 20px;
+        font-size: 11px;
+    }
+
+    
+
+    
+    
+    
+    /*footer*/
+    .divFooter {
+        display: grid;
+        grid-template-rows: 2fr;
+        width: contain;
+        height: max-content;
+        background-color: #548478f8;
+        color: #ffffffe1;
+        border-radius: 37px 0px 37px 0px;
+        padding: 30px 40px 70px 40px;
+    }
+    
+    .divLinks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .tituloContatos{
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 35px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .imgFooter{
+        width: 63%;  
+    }
+    
+    .linkFooter{
+        display: grid;
+    
+        justify-items: center;
+        width: 40%;
+    }
+    
+    .lineFooter{
+        height: 17vh;
+     
+    }
+    
+    
+    
+    
+    
+
+    
+}
+
+
+
+
