@@ -17,23 +17,10 @@ body{
     background-size: 100%;   
 }
 
-@font-face {
-    font-family: 'Noto Sans';
-    src: url('fonts/NotoSans-Regular.ttf') format('truetype');
-  }
 
-  @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  }
-  @font-face {
-    font-family: 'Montserrat-bold';
-    src: url('fonts/NotoSans-Bold.ttf') format('truetype');
-  }
 
-/*
 @media screen and (min-width: 320px){
-    /*.navBar {
+    .navBar {
         width: 100%;
         display: block;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -89,14 +76,17 @@ body{
     .item2{
         grid-row: 3;
         grid-column: 2; 
-        font-family: 'Montserrat';
-        
+        text-shadow: 0.15em 0.15em 0.25em rgb(29, 29, 29);
+        font-family: 'Open Sans';
+        font-weight: 550;
     }
     
     .item3{
         grid-row: 4;
         grid-column: 2; 
-        font-family: 'Montserrat';
+        text-shadow: 0.1em 0.1em 0.2em rgb(41, 41, 41) ;
+        font-family: 'Open Sans';
+        font-weight: 400;
         font-size: 19px;
         width: 100%;
         justify-content: left;
@@ -121,7 +111,7 @@ body{
         margin: 10px ;
     }
     
-    /*.divEducacao{
+    .divEducacao{
         display: grid;
         grid-template-rows: 1fr 3fr;
         border-right: 1px solid black;
@@ -283,7 +273,7 @@ body{
     
     
     
-    /*footer
+    /*footer*/
     .divFooter {
         display: grid;
         grid-template-rows: 2fr;
@@ -330,26 +320,24 @@ body{
      
     }
     
-    */
     
     
     
+    
+}
 
- 
+    
 
 @media screen and (min-width: 768px){
     .navBar {
-        
         width: 100%;
+        display: block;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        
-        height: 80px;
-       
         background-color: transparent;
-        
-        
+        height: 80px;
+        position: fixed;
+        z-index: +1;
     }
- 
     
     .logo {
         width: 74px;
@@ -379,7 +367,7 @@ body{
         margin: 50px ;
         font-size: small;
         color: #ffffff;
-        font-family: 'montserrat';
+        font-family: 'Open Sans';
         text-decoration: none;
         text-shadow: 0.15em 0.15em 0.25em rgb(51, 51, 51);
         text-transform: lowercase;
@@ -413,186 +401,126 @@ body{
         background-image: url("imagens/background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+        display: grid;
         height: 100vh;
+        grid-template-rows: 3.2fr 2fr 0.5fr 0.3fr 2.5fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
         width: 100%;
+        height: max-content;
         align-items: center;
         justify-items: center;
         color: #ffffffe1;  
     }
     
     .item1{
-        width: 15%;
-        margin-top: 100px
-     
+        width: 18%;;
+        grid-row: 2;
+        grid-column: 2;   
     }
     
     .item2{
-         
-       
-        font-family: 'Montserrat';
-        font-size: 25px;
+        grid-row: 3;
+        grid-column: 2; 
+        text-shadow: 0.15em 0.15em 0.25em rgb(29, 29, 29);
+        font-family: 'Open Sans';
+        font-weight: 550;
         margin: 10px;
     }
     
     .item3{
-        font-family: 'Montserrat';
+        grid-row: 4;
+        grid-column: 2; 
+        text-shadow: 0.1em 0.1em 0.2em rgb(41, 41, 41) ;
+        font-family: 'Open Sans';
+        font-weight: 500;
         justify-content: center;
         align-items: center;
-        width: max-content;   
-    }
-
-    .menu-categories{
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        background-color:#d4d4d4;
-        padding: 25px;
-        font-family: montserrat;
-        font-size: 10px;
-        font-size: 15px;
-        border-bottom: 1px solid;
-    }
-    
-    .changeDivs{
-        font-family: montserrat;
-        text-decoration: none;
-        font-weight: 600;
-        color: black
-    }
-    .inactive {
-        display: none;
-    }
-    .active {
-        display: block;
-        }
-        
-    .hidden {
-        display: none;
-        }
-        
-    .menu-container {
-        margin-top: 15px;
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly; 
-    }
-
-    .imgIcon{
-        width: 64px;
-        height: auto;
-        margin: 10px;
-    }
-
-    .icon{
-        width: 50px;
-        border: 0px;
-        padding: 5px 10px 5px 10px;
-        animation: updown 2s ease infinite;
-        }
+        width: max-content;
         
     }
-    @keyframes updown {
-        0% {
-          transform: translateY(-8%);
-        }
-      
-        50% {
-          transform: translateY(8%);
-        }
-      
-        100% {
-          transform: translateY(-8%);
-        }
-      }
 
-    .perfilProfissional{
+    .perfilProssional{
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
         height: max-content;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
         margin: auto;
-        background-color:#d4d4d4;
-        padding-left: 30px;
-        padding-right: 30px;  
+        background-color:#E8E8E8;
+        padding: 100px 10px 100px 10px;
+        
     }
     
-   
-    .divEducacao{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        text-align: left;
-       
+    .itemImg1Perfil {
+        width: 70%;
+        margin: 10px ;
     }
+    
+    .divEducacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        border-right: 1px solid black;
+        align-items: initial;
+    }
+
+    .divEducacao2{
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+        border-right: 1px solid black;
+        align-items: initial;
+        display: none;
+    }
+    
     .itemTituloPerfil {  
         text-align: left;
-        font-weight: 600;
-        padding: 10px;
-        font-family: 'Montserrat';
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
         color: black;
     }
     
     .itemTexto1Perfil {
-        padding: 10px;
-        
-        font-family: 'Noto Sans';
+        width: 90%;
+        margin: auto;
+        font-family: , Times, serif;
         text-align: justify;  
         color: rgb(51, 51, 51);   
     }
     
-    .divEducacao2{
-        display: flex;
-        position: relative;
-        width: 100%;
-        justify-content: space-around;
-        padding: 30px;
-        flex-wrap: wrap; 
+    .divQualificacao{
+        display: grid;
+        grid-template-rows: 1fr 3fr;  
+        display: none;
+    }
+    .divQualificacao2{
+        display: grid;
+        grid-template-rows: 1fr 3fr;  
         
     }
-   
-    
-
-    
-
-    .divExperiencia{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        text-align: left;
-    }
-    
     
     .itemTitulo2Perfil {  
         text-align: left;
-        font-weight: 600;
-        padding: 10px;
-        font-family: 'Montserrat';
-        color: black;
-
+        width: 90%;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ffffffe1;
     }
     
     .itemTexto2Perfil {  
-        padding: 10px;
-        
-        font-family: 'Noto Sans';
-        text-align: justify;  
-        color: rgb(51, 51, 51);    
+        text-align: left;
+        width: 90%;
+        margin: auto;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(178, 185, 178)
     }
     
-    .certificado{
-        width: 200px;
-        padding: 30px;
+    .itemImg2Perfil {
+        width: 77%;
+        margin: 10px ;
     }
-    
-    
 
     .divPortifolioTitulo{
         display: grid;
